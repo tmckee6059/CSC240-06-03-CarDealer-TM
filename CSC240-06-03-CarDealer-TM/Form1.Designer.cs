@@ -1,6 +1,6 @@
 ﻿namespace CSC240_06_03_CarDealer_TM
 {
-    partial class Form1
+    partial class mainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             mckeeLabel = new TextBox();
             carsLabel = new TextBox();
             trucksLabel = new TextBox();
@@ -115,7 +115,7 @@
             pictureBox2.TabIndex = 6;
             pictureBox2.TabStop = false;
             // 
-            // Form1
+            // mainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -128,7 +128,7 @@
             Controls.Add(trucksLabel);
             Controls.Add(carsLabel);
             Controls.Add(mckeeLabel);
-            Name = "Form1";
+            Name = "mainForm";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)carclipartPictureBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
