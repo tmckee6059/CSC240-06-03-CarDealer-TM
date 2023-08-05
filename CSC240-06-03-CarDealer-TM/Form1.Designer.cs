@@ -29,61 +29,17 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
-            mckeeLabel = new TextBox();
-            carsLabel = new TextBox();
-            trucksLabel = new TextBox();
-            minivansLabel = new TextBox();
             carclipartPictureBox = new PictureBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
+            mckeeLabel = new Label();
+            carLabel = new Label();
+            truckLabel = new Label();
+            minivanLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)carclipartPictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
-            // 
-            // mckeeLabel
-            // 
-            mckeeLabel.BackColor = Color.Wheat;
-            mckeeLabel.Font = new Font("Viner Hand ITC", 30F, FontStyle.Bold, GraphicsUnit.Point);
-            mckeeLabel.Location = new Point(131, 86);
-            mckeeLabel.Name = "mckeeLabel";
-            mckeeLabel.Size = new Size(375, 72);
-            mckeeLabel.TabIndex = 0;
-            mckeeLabel.Text = "McKee Automotive";
-            // 
-            // carsLabel
-            // 
-            carsLabel.Anchor = AnchorStyles.None;
-            carsLabel.BackColor = Color.Wheat;
-            carsLabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            carsLabel.Location = new Point(87, 216);
-            carsLabel.Name = "carsLabel";
-            carsLabel.Size = new Size(138, 26);
-            carsLabel.TabIndex = 1;
-            carsLabel.Text = "Cars";
-            carsLabel.TextAlign = HorizontalAlignment.Center;
-            // 
-            // trucksLabel
-            // 
-            trucksLabel.BackColor = Color.Wheat;
-            trucksLabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            trucksLabel.Location = new Point(248, 216);
-            trucksLabel.Name = "trucksLabel";
-            trucksLabel.Size = new Size(145, 26);
-            trucksLabel.TabIndex = 2;
-            trucksLabel.Text = "Trucks";
-            trucksLabel.TextAlign = HorizontalAlignment.Center;
-            // 
-            // minivansLabel
-            // 
-            minivansLabel.BackColor = Color.Wheat;
-            minivansLabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            minivansLabel.Location = new Point(416, 216);
-            minivansLabel.Name = "minivansLabel";
-            minivansLabel.Size = new Size(139, 26);
-            minivansLabel.TabIndex = 3;
-            minivansLabel.Text = "Minivans";
-            minivansLabel.TextAlign = HorizontalAlignment.Center;
             // 
             // carclipartPictureBox
             // 
@@ -115,19 +71,60 @@
             pictureBox2.TabIndex = 6;
             pictureBox2.TabStop = false;
             // 
+            // mckeeLabel
+            // 
+            mckeeLabel.AutoSize = true;
+            mckeeLabel.Font = new Font("Viner Hand ITC", 30F, FontStyle.Bold, GraphicsUnit.Point);
+            mckeeLabel.Location = new Point(121, 103);
+            mckeeLabel.Name = "mckeeLabel";
+            mckeeLabel.Size = new Size(397, 65);
+            mckeeLabel.TabIndex = 7;
+            mckeeLabel.Text = "McKee Automotive";
+            mckeeLabel.Click += label1_Click;
+            // 
+            // carLabel
+            // 
+            carLabel.AutoSize = true;
+            carLabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            carLabel.Location = new Point(134, 217);
+            carLabel.Name = "carLabel";
+            carLabel.Size = new Size(46, 20);
+            carLabel.TabIndex = 8;
+            carLabel.Text = "Cars";
+            // 
+            // truckLabel
+            // 
+            truckLabel.AutoSize = true;
+            truckLabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            truckLabel.Location = new Point(291, 221);
+            truckLabel.Name = "truckLabel";
+            truckLabel.Size = new Size(62, 20);
+            truckLabel.TabIndex = 9;
+            truckLabel.Text = "Trucks";
+            // 
+            // minivanLabel
+            // 
+            minivanLabel.AutoSize = true;
+            minivanLabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            minivanLabel.Location = new Point(449, 221);
+            minivanLabel.Name = "minivanLabel";
+            minivanLabel.Size = new Size(78, 20);
+            minivanLabel.TabIndex = 10;
+            minivanLabel.Text = "Minivans";
+            // 
             // mainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Wheat;
             ClientSize = new Size(646, 449);
+            Controls.Add(minivanLabel);
+            Controls.Add(truckLabel);
+            Controls.Add(carLabel);
+            Controls.Add(mckeeLabel);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(carclipartPictureBox);
-            Controls.Add(minivansLabel);
-            Controls.Add(trucksLabel);
-            Controls.Add(carsLabel);
-            Controls.Add(mckeeLabel);
             Name = "mainForm";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)carclipartPictureBox).EndInit();
@@ -138,13 +135,12 @@
         }
 
         #endregion
-
-        private TextBox mckeeLabel;
-        private TextBox carsLabel;
-        private TextBox trucksLabel;
-        private TextBox minivansLabel;
         private PictureBox carclipartPictureBox;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
+        private Label mckeeLabel;
+        private Label carLabel;
+        private Label truckLabel;
+        private Label minivanLabel;
     }
 }
