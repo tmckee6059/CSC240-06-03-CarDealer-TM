@@ -43,6 +43,7 @@
             // 
             // carclipartPictureBox
             // 
+            carclipartPictureBox.BackColor = Color.Wheat;
             carclipartPictureBox.Image = (Image)resources.GetObject("carclipartPictureBox.Image");
             carclipartPictureBox.Location = new Point(87, 260);
             carclipartPictureBox.Name = "carclipartPictureBox";
@@ -61,7 +62,7 @@
             truckclipartPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             truckclipartPictureBox.TabIndex = 5;
             truckclipartPictureBox.TabStop = false;
-            truckclipartPictureBox.Click += truckclipartPictureBox_Click;
+            truckclipartPictureBox.Click += TruckclipartPictureBox_Click;
             // 
             // minivanclipartPictureBox
             // 
@@ -72,7 +73,7 @@
             minivanclipartPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             minivanclipartPictureBox.TabIndex = 6;
             minivanclipartPictureBox.TabStop = false;
-            minivanclipartPictureBox.Click += minivanclipartPictureBox_Click;
+            minivanclipartPictureBox.Click += MinivanclipartPictureBox_Click;
             // 
             // mckeeLabel
             // 
