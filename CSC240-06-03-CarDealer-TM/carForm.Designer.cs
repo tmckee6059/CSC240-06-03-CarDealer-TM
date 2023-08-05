@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(carForm));
             carPictureBox = new PictureBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)carPictureBox).BeginInit();
             SuspendLayout();
             // 
@@ -38,25 +39,39 @@
             carPictureBox.Image = (Image)resources.GetObject("carPictureBox.Image");
             carPictureBox.Location = new Point(12, 12);
             carPictureBox.Name = "carPictureBox";
-            carPictureBox.Size = new Size(459, 408);
-            carPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            carPictureBox.Size = new Size(436, 438);
+            carPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             carPictureBox.TabIndex = 0;
             carPictureBox.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Modern No. 20", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(454, 303);
+            label1.Name = "label1";
+            label1.Size = new Size(430, 126);
+            label1.TabIndex = 1;
+            label1.Text = "Brand new Bentley luxury sedan!\r\n\r\nSlick black; all black leather interior with \r\ntouchscreen navigation and OnStar subscription.\r\n\r\nHigh maintenance cost.";
             // 
             // carForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.Gray;
+            ClientSize = new Size(901, 450);
+            Controls.Add(label1);
             Controls.Add(carPictureBox);
             Name = "carForm";
             Text = "carForm";
             ((System.ComponentModel.ISupportInitialize)carPictureBox).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private PictureBox carPictureBox;
+        private Label label1;
     }
 }

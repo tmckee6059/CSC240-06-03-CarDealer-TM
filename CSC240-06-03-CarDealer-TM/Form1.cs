@@ -5,6 +5,49 @@ namespace CSC240_06_03_CarDealer_TM
         public mainForm()
         {
             InitializeComponent();
+
+            carclipartPictureBox.MouseEnter += CarclipartPictureBox_MouseEnter;
+            carclipartPictureBox.MouseLeave += CarclipartPictureBox_MouseLeave;
+            truckclipartPictureBox.MouseEnter += TruckclipartPictureBox_MouseEnter;
+            truckclipartPictureBox.MouseLeave += TruckclipartPictureBox_MouseLeave;
+            minivanclipartPictureBox.MouseEnter += MinivanclipartPictureBox_MouseEnter;
+            minivanclipartPictureBox.MouseLeave += MinivanclipartPictureBox_MouseLeave;
+        }
+
+        private void CarclipartPictureBox_MouseEnter(object sender, EventArgs e)
+        {
+            carclipartPictureBox.BackColor = SystemColors.Highlight;
+            carclipartPictureBox.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void CarclipartPictureBox_MouseLeave(object sender, EventArgs e)
+        {
+            carclipartPictureBox.BackColor = Color.Wheat;
+            carclipartPictureBox.BorderStyle = BorderStyle.None;
+        }
+
+        private void TruckclipartPictureBox_MouseEnter(Object sender, EventArgs e)
+        {
+            truckclipartPictureBox.BackColor = SystemColors.Highlight;
+            truckclipartPictureBox.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void TruckclipartPictureBox_MouseLeave(Object sender, EventArgs e)
+        {
+            truckclipartPictureBox.BackColor = Color.Wheat;
+            truckclipartPictureBox.BorderStyle = BorderStyle.None;
+        }
+
+        private void MinivanclipartPictureBox_MouseEnter(object sender, EventArgs e)
+        {
+            minivanclipartPictureBox.BackColor = SystemColors.Highlight;
+            minivanclipartPictureBox.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void MinivanclipartPictureBox_MouseLeave(object sender, EventArgs e)
+        {
+            minivanclipartPictureBox.BackColor = Color.Wheat;
+            minivanclipartPictureBox.BorderStyle = BorderStyle.None;
         }
 
         private void MckeeLabel_Click(object sender, EventArgs e)
@@ -18,13 +61,13 @@ namespace CSC240_06_03_CarDealer_TM
             carForm.ShowDialog();
         }
 
-        private void truckclipartPictureBox_Click(object sender, EventArgs e)
+        private void TruckclipartPictureBox_Click(object sender, EventArgs e)
         {
             truckForm truckForm = new truckForm();
             truckForm.ShowDialog();
         }
 
-        private void minivanclipartPictureBox_Click(object sender, EventArgs e)
+        private void MinivanclipartPictureBox_Click(object sender, EventArgs e)
         {
             minivanForm minivanForm = new minivanForm();
             minivanForm.ShowDialog();

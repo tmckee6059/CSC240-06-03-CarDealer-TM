@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(truckForm));
             truckPictureBox = new PictureBox();
+            truckdetailsLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)truckPictureBox).BeginInit();
             SuspendLayout();
             // 
@@ -43,20 +44,34 @@
             truckPictureBox.TabIndex = 0;
             truckPictureBox.TabStop = false;
             // 
+            // truckdetailsLabel
+            // 
+            truckdetailsLabel.AutoSize = true;
+            truckdetailsLabel.Font = new Font("Modern No. 20", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            truckdetailsLabel.Location = new Point(451, 213);
+            truckdetailsLabel.Name = "truckdetailsLabel";
+            truckdetailsLabel.Size = new Size(469, 84);
+            truckdetailsLabel.TabIndex = 1;
+            truckdetailsLabel.Text = "You can never go wrong with a Bongo truck!\r\n\r\nPopular in South Korea, these lightweight and\r\nversatile trucks can handle whatever you throw at it.";
+            // 
             // truckForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.FromArgb(192, 255, 255);
+            ClientSize = new Size(928, 450);
+            Controls.Add(truckdetailsLabel);
             Controls.Add(truckPictureBox);
             Name = "truckForm";
             Text = "truckForm";
             ((System.ComponentModel.ISupportInitialize)truckPictureBox).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private PictureBox truckPictureBox;
+        private Label truckdetailsLabel;
     }
 }
