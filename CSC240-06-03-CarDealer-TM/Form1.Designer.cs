@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             carclipartPictureBox = new PictureBox();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
+            truckclipartPictureBox = new PictureBox();
+            minivanclipartPictureBox = new PictureBox();
             mckeeLabel = new Label();
             carLabel = new Label();
             truckLabel = new Label();
             minivanLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)carclipartPictureBox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)truckclipartPictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)minivanclipartPictureBox).BeginInit();
             SuspendLayout();
             // 
             // carclipartPictureBox
@@ -50,26 +50,29 @@
             carclipartPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             carclipartPictureBox.TabIndex = 4;
             carclipartPictureBox.TabStop = false;
+            carclipartPictureBox.Click += CarclipartPictureBox_Click;
             // 
-            // pictureBox1
+            // truckclipartPictureBox
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(248, 260);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(145, 84);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 5;
-            pictureBox1.TabStop = false;
+            truckclipartPictureBox.Image = (Image)resources.GetObject("truckclipartPictureBox.Image");
+            truckclipartPictureBox.Location = new Point(248, 260);
+            truckclipartPictureBox.Name = "truckclipartPictureBox";
+            truckclipartPictureBox.Size = new Size(145, 84);
+            truckclipartPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            truckclipartPictureBox.TabIndex = 5;
+            truckclipartPictureBox.TabStop = false;
+            truckclipartPictureBox.Click += truckclipartPictureBox_Click;
             // 
-            // pictureBox2
+            // minivanclipartPictureBox
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(416, 260);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(139, 84);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 6;
-            pictureBox2.TabStop = false;
+            minivanclipartPictureBox.Image = (Image)resources.GetObject("minivanclipartPictureBox.Image");
+            minivanclipartPictureBox.Location = new Point(416, 260);
+            minivanclipartPictureBox.Name = "minivanclipartPictureBox";
+            minivanclipartPictureBox.Size = new Size(139, 84);
+            minivanclipartPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            minivanclipartPictureBox.TabIndex = 6;
+            minivanclipartPictureBox.TabStop = false;
+            minivanclipartPictureBox.Click += minivanclipartPictureBox_Click;
             // 
             // mckeeLabel
             // 
@@ -80,7 +83,7 @@
             mckeeLabel.Size = new Size(397, 65);
             mckeeLabel.TabIndex = 7;
             mckeeLabel.Text = "McKee Automotive";
-            mckeeLabel.Click += label1_Click;
+            mckeeLabel.Click += MckeeLabel_Click;
             // 
             // carLabel
             // 
@@ -122,22 +125,22 @@
             Controls.Add(truckLabel);
             Controls.Add(carLabel);
             Controls.Add(mckeeLabel);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
+            Controls.Add(minivanclipartPictureBox);
+            Controls.Add(truckclipartPictureBox);
             Controls.Add(carclipartPictureBox);
             Name = "mainForm";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)carclipartPictureBox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)truckclipartPictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)minivanclipartPictureBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
         private PictureBox carclipartPictureBox;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
+        private PictureBox truckclipartPictureBox;
+        private PictureBox minivanclipartPictureBox;
         private Label mckeeLabel;
         private Label carLabel;
         private Label truckLabel;
